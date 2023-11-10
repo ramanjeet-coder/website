@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><h2>
+        #include<stdio.h>
+            void bubbleSort(int arr[],int size){
+                int temp,i,s=size;
+                for(int j=0;j < ( s-1);j++){
+                for(i=0;i<(size-1);i++){
+                    if(arr[i]>arr[i+1]){
+                        temp=arr[i];
+                        arr[i]=arr[i+1];
+                        arr[i+1]=temp;
+                    }
+                }
+                size=size-1;
+                }
+            }
+            void main(){
+                int i,arr1[]={85,1000,58,2},arr2[]={78,84,1947},newArray[(sizeof(arr1)+sizeof(arr2))/sizeof(int)];
+                for(i=0;i<(sizeof(arr1)/sizeof(int));i++){
+                    newArray[i]=arr1[i];
+                }
+                for(i=(sizeof(arr1)/sizeof(int));i<(sizeof(newArray)/sizeof(int));i++){
+                    newArray[i]=arr2[i-4];
+                }
+                bubbleSort(newArray,(sizeof(newArray)/sizeof(int)));
+                for(i=0;i < 7;i++){
+                    printf("%d ",newArray[i]);
+                }
+            }</h2>
+            <div class="output">
+            <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1>
+            <h2>2 58 78 84 85 1000 1947 </h2>
+
+
+        </div>
+    </pre>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+<h2>#include&lt;stdio.h&gt;
+    void main(){
+        int i, arr[]={2,3,1},count=0;
+        for(i=1;i<((sizeof(arr)/sizeof(int))-1);i++){
+            if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
+                printf("%d ",arr[i]);
+                count++;
+            }
+        }
+        if(count==0) printf("No local maxima found");
+    }</h2>
+<div class="output">
+    <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1>
+    <h2>3</h2>          
+
+
+        </div>
+    </pre>
+    
+</body>
+</html>

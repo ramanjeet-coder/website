@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><h2>
+         #include&lt;stdio.h&gt;
+            int main() {
+                int n, i, j;
+                printf("Enter the size of the array: ");
+                scanf("%d", &n);
+            
+                int arr[n];
+            
+                printf("Enter %d elements:\n", n);
+                for (i = 0; i < n; i++) {
+                    scanf("%d", &arr[i]);
+                }
+            
+                for (i = 0; i < n; i++) {
+                    for (j = i + 1; j < n; j++) {
+                        if (arr[i] == arr[j]) {
+                            arr[j] = 0; 
+                        }
+                    }
+                }
+            
+                printf("Array with duplicates removed and filled with zeros:\n");
+                for (i = 0; i < n; i++) {
+                    printf("%d ", arr[i]);
+                }
+            
+                return 0;
+            }</h2>
+            <div class="output">
+            <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1><h2>
+            Enter the size of the array: 6
+            Enter 6 elements:
+            11
+            8
+            8
+            78
+            11
+            9
+            Array with duplicates removed and filled with zeros:
+            11 8 0 78 0 9</h2>
+
+
+        </div>
+    </pre>
+    
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><h2>
+         #include&lt;stdio.h&gt;
+            #define n 3
+            void arrayEqual(int[],int[]);
+            void main(){
+                int arr1[n],arr2[n],i;
+                printf("---Enter array 1---");
+                for(i=0;i < n;i++){
+                printf("\nEnter value %d : ",i+1);
+                scanf("%d",&arr1[i]);
+                }
+                printf("---Enter array 2---");
+                for(i=0;i < n;i++){
+                printf("\nEnter value %d : ",i+1);
+                scanf("%d",&arr2[i]);
+                }
+                arrayEqual(arr1,arr2);
+            }
+            
+            void arrayEqual(int arr1[],int arr2[]){
+                for(int i=0;i < n;i++){
+                    if(arr1[i]==arr2[i]){
+                    }else{
+                        printf("Arrays are not equal");
+                    return;
+                    }
+                }
+                printf("Arrays are equal");
+            }</h2>
+        <div class="output">
+            <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1><h2>
+            ---Enter array 1---
+            Enter value 1 : 1
+            
+            Enter value 2 : 1
+            
+            Enter value 3 : 1
+            ---Enter array 2---
+            Enter value 1 : 1
+            
+            Enter value 2 : 1
+            
+            Enter value 3 : 5
+            Arrays are not equal</h2>
+
+
+        </div>
+    </pre>
+    
+</body>
+</html>

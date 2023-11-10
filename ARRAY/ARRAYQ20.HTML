@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+<h2>
+    #include< stdio.h>
+    void main()
+        {
+            int n=10,arr[10],i,left[10],right[10],min,water;
+            for ( i = 0; i < 10; i++)
+            {
+                printf("Enter value at %d position\n",i+1);
+                scanf("%d",&arr[i]);
+            }
+           left[0]=arr[0];
+           for ( i = 1; i < 10; i++)
+           {
+             if(left[i-1] < arr[i])
+                left[i]=arr[i];
+             
+             else
+             left[i]=left[i-1];
+           }
+           right[n-1]=arr[n-1];
+           for(i=n-1;i > =0;i--)
+           {
+            if(right[i+1] < arr[i])
+            right[i]=arr[i];
+            else
+            right[i]=right[i+1];
+           }
+          int ans=0;
+          for ( i = 0; i < n; i++)
+          {
+            if(left[i] < right[i])
+            min=left[i];
+            else
+            min=right[i];
+            water=min-arr[i];
+            ans+=water;
+          }
+          printf("tapped water %d",ans);
+          
+        }
+        
+</h2>
+<div class="output">
+    <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1>
+<h2>
+    Enter value at 1 position
+    5
+    Enter value at 2 position
+    6
+    Enter value at 3 position
+    7
+    Enter value at 4 position
+    3
+    Enter value at 5 position
+    4
+    tapped water 6
+</h2>
+
+
+        </div>
+    </pre>
+    
+</body>
+</html>

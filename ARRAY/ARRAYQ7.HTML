@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre> <h2>
+        #include&lt;stdio.h&gt;
+
+            int main() {
+                int n;
+                
+              
+                printf("Enter the size of the array: ");
+                scanf("%d", &n);
+            
+                int arr[n];
+            
+                
+                printf("Enter %d integers:\n", n);
+                for (int i = 0; i < n; i++) {
+                    scanf("%d", &arr[i]);
+                }
+            
+                
+                for (int i = 0; i < n; i++) {
+                    arr[i] = arr[i] * arr[i];
+                }
+            
+                
+                printf("Squared values of the array:\n");
+                for (int i = 0; i < n; i++) {
+                    printf("%d ", arr[i]);
+                }
+                
+            
+                return 0;
+            }</h2>
+            <div class="output">
+                <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1><h2>
+                Enter the size of the array: 3
+                Enter 3 integers:
+                2 4 5
+                Squared values of the array:
+                4 16 25</h2>
+            </div>
+            
+    </pre>
+
+</body>
+</html>

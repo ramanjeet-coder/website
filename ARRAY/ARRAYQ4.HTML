@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><h2>
+        #include&lt;stdio.h>&gt;
+        int main() {
+        int size;
+        printf("Enter the size of the array: ");
+        scanf("%d", &size);
+        int originalArray[size];
+        int reversedArray[size];
+        printf("Enter %d elements:\n", size);
+        for (int i = 0; i < size; i++) {
+            scanf("%d", &originalArray[i]);
+        }
+        for (int i = 0; i < size; i++) {
+            reversedArray[i] = originalArray[size - 1 - i];
+        }
+        printf("Original Array: ");
+        for (int i = 0; i < size; i++) {
+            printf("%d ", originalArray[i]);
+        }
+        printf("\nReversed Array: ");
+        for (int i = 0; i < size; i++) {
+            printf("%d ", reversedArray[i]);
+        }
+         return 0;
+    }</h2>
+    <div class="output">
+        <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1><h2>        
+        Enter the size of the array: 5
+        Enter 5 elements:
+        5
+        4
+        3
+        2
+        1
+        Original Array: 5 4 3 2 1
+        Reversed Array: 1 2 3 4 5</h2>
+
+    </div></pre>
+
+    
+</body>
+</html>

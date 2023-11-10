@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre><h2>
+        #include&lt;stdio.h&gt;
+            #define n 4
+            void main(){
+                int arr[n],i,num,r,pal;
+                for(i=0;i < n;i++){
+                printf("\nEnter value %d : ",i+1);
+                scanf("%d",&arr[i]);
+                }
+                for(i=0;i < n;i++){
+                    num=arr[i];
+                    pal=0;
+                    while(num>0){
+                        
+                        r=num%10;
+                        pal=r+(pal*10);
+                        num=num/10;
+                    }
+                    if(arr[i]==pal)
+                    printf("%d ",pal);
+                }
+            } </h2>    
+<div class="output">
+            <h1><b><i><strong>-----OUTPUT-----</strong></i></i></b></h1><h2>
+            Enter value 1 : 121
+
+            Enter value 2 : 56
+            
+            Enter value 3 : 969
+            
+            Enter value 4 : 457
+            121 969</h2>
+
+
+        </div>
+    </pre>
+    
+</body>
+</html>
